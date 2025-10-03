@@ -1,0 +1,5 @@
+Scenario Name,House Price,Down Payment %,Down Payment $,Loan Amount,Interest Rate %,Loan Term (Years),Monthly Property Tax,Monthly PMI,Monthly Home Insurance,Monthly HOA,Monthly Principal + Interest,Initial Total Monthly Payment,Monthly Payment After PMI Removal,PMI Removal Month,PMI Removal Time,Total PMI Paid,Total Interest Paid,Total Cost of Ownership
+Scenario 1 - 10% Down,"$660,000.00",10%,"$66,000.00","$594,000.00",6.33%,15,$250.00,$131.00,$75.00,$432.00,"$5,119.03","$6,007.03","$5,876.03",32,2y 8m,"$4,061.00","$327,424.86","$1,127,745.86"
+Scenario 2 - 10% Down,"$625,000.00",10%,"$62,500.00","$562,500.00",6.33%,15,$250.00,$131.00,$75.00,$432.00,"$4,847.56","$5,735.56","$5,604.56",32,2y 8m,"$4,061.00","$310,061.42","$1,075,382.42"
+Scenario 3 - 20% Down,"$625,000.00",20%,"$125,000.00","$500,000.00",6.0%,15,$250.00,$131.00,$75.00,$432.00,"$4,219.28","$5,107.28","$4,976.28",1,0y 1m,$0.00,"$259,471.15","$1,020,731.15"
+Scenario 4 - 20% Down,"$660,000.00",20%,"$132,000.00","$528,000.00",6.0%,15,$250.00,$131.00,$75.00,$432.00,"$4,455.56","$5,343.56","$5,212.56",1,0y 1m,$0.00,"$274,001.53","$1,070,261.53"

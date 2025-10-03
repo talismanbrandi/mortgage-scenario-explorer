@@ -1,0 +1,43 @@
+# Mortgage Calculator Configuration File
+# You can specify multiple scenarios to compare different mortgage options
+
+scenarios:
+  - name: "Scenario 1 - 10% Down"
+    house_price: 660000
+    down_payment_percent: 10
+    interest_rate: 6.33
+    loan_term_years: 15
+    monthly_property_tax: 250
+    monthly_pmi: 131
+    monthly_home_insurance: 75
+    monthly_hoa: 432
+
+  - name: "Scenario 2 - 10% Down"
+    house_price: 625000
+    down_payment_percent: 10
+    interest_rate: 6.33
+    loan_term_years: 15
+    monthly_property_tax: 250
+    monthly_pmi: 131
+    monthly_home_insurance: 75
+    monthly_hoa: 432
+
+  - name: "Scenario 3 - 20% Down"
+    house_price: 625000
+    down_payment_percent: 20
+    interest_rate: 6.
+    loan_term_years: 15
+    monthly_property_tax: 250
+    monthly_pmi: 131
+    monthly_home_insurance: 75
+    monthly_hoa: 432
+
+  - name: "Scenario 4 - 20% Down"
+    house_price: 660000
+    down_payment_percent: 20
+    interest_rate: 6.
+    loan_term_years: 15
+    monthly_property_tax: 250
+    monthly_pmi: 131
+    monthly_home_insurance: 75
+    monthly_hoa: 432
