@@ -1,43 +1,50 @@
 # Mortgage Calculator Configuration File
 # You can specify multiple scenarios to compare different mortgage options
+# Use 'desired_monthly_payment' to set your target monthly payment (must be >= minimum)
+# Leave it blank or omit it to use the minimum payment
 
 scenarios:
-  - name: "Scenario 1 - 10% Down"
-    house_price: 660000
+  - name: "Scenario 1 - Minimum Payment"
+    house_price: 670000
+    down_payment_percent: 20
+    interest_rate: 6.33
+    loan_term_years: 30
+    monthly_property_tax: 325
+    monthly_pmi: 65
+    monthly_home_insurance: 60
+    monthly_hoa: 532
+    desired_monthly_payment: 6100
+    # No desired_monthly_payment = use minimum
+
+  - name: "Scenario 2 - $5000/month Payment"
+    house_price: 670000
+    down_payment_percent: 20
+    interest_rate: 6.33
+    loan_term_years: 30
+    monthly_property_tax: 325
+    monthly_pmi: 65
+    monthly_home_insurance: 60
+    monthly_hoa: 532
+    desired_monthly_payment: 6200
+
+  - name: "Scenario 3 - $5500/month Payment"
+    house_price: 670000
     down_payment_percent: 10
     interest_rate: 6.33
-    loan_term_years: 15
-    monthly_property_tax: 250
-    monthly_pmi: 131
-    monthly_home_insurance: 75
-    monthly_hoa: 432
+    loan_term_years: 30
+    monthly_property_tax: 325
+    monthly_pmi: 65
+    monthly_home_insurance: 60
+    monthly_hoa: 532
+    desired_monthly_payment: 6100
 
-  - name: "Scenario 2 - 10% Down"
-    house_price: 625000
+  - name: "Scenario 4 - $6000/month Payment"
+    house_price: 670000
     down_payment_percent: 10
     interest_rate: 6.33
-    loan_term_years: 15
-    monthly_property_tax: 250
-    monthly_pmi: 131
-    monthly_home_insurance: 75
-    monthly_hoa: 432
-
-  - name: "Scenario 3 - 20% Down"
-    house_price: 625000
-    down_payment_percent: 20
-    interest_rate: 6.
-    loan_term_years: 15
-    monthly_property_tax: 250
-    monthly_pmi: 131
-    monthly_home_insurance: 75
-    monthly_hoa: 432
-
-  - name: "Scenario 4 - 20% Down"
-    house_price: 660000
-    down_payment_percent: 20
-    interest_rate: 6.
-    loan_term_years: 15
-    monthly_property_tax: 250
-    monthly_pmi: 131
-    monthly_home_insurance: 75
-    monthly_hoa: 432
+    loan_term_years: 30
+    monthly_property_tax: 325
+    monthly_pmi: 65
+    monthly_home_insurance: 60
+    monthly_hoa: 532
+    desired_monthly_payment: 6200

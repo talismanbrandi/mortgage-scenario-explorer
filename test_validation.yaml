@@ -1,0 +1,23 @@
+# Test file to verify validation works
+scenarios:
+  - name: "Valid - Above Minimum"
+    house_price: 670000
+    down_payment_percent: 10
+    interest_rate: 6.33
+    loan_term_years: 30
+    monthly_property_tax: 325
+    monthly_pmi: 65
+    monthly_home_insurance: 60
+    monthly_hoa: 532
+    desired_monthly_payment: 5000  # Should work
+
+  - name: "Invalid - Below Minimum"
+    house_price: 670000
+    down_payment_percent: 10
+    interest_rate: 6.33
+    loan_term_years: 30
+    monthly_property_tax: 325
+    monthly_pmi: 65
+    monthly_home_insurance: 60
+    monthly_hoa: 532
+    desired_monthly_payment: 3000  # Should fail - below minimum of ~$4,726
