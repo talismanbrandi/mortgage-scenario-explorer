@@ -230,7 +230,7 @@ Monthly Payment:        $5,000.00 (SAME!)
 **$5,000/month vs Minimum Payment:**
 
 | Metric | Minimum | $5,000/month | Savings |
-|--------|---------|--------------|---------||
+|--------|---------|--------------|---------|
 | Monthly Payment | $4,726 | $5,000 | -$274/month |
 | PMI Removed At | 7y 9m | 5y 7m | 2y 2m sooner |
 | Total PMI Paid | $5,980 | $4,290 | **$1,690** |
