@@ -4,47 +4,48 @@
 # Leave it blank or omit it to use the minimum payment
 
 scenarios:
-  - name: "Scenario 1 - Minimum Payment"
+  - name: "Scenario 1 - $6100/month Payment"
     house_price: 670000
     down_payment_percent: 20
-    interest_rate: 6.33
+    interest_rate: 6.25
     loan_term_years: 30
     monthly_property_tax: 325
-    monthly_pmi: 65
+    monthly_pmi: 0
     monthly_home_insurance: 60
     monthly_hoa: 532
     desired_monthly_payment: 6100
     # No desired_monthly_payment = use minimum
 
-  - name: "Scenario 2 - $5000/month Payment"
+  - name: "Scenario 2 - $6200/month Payment"
     house_price: 670000
     down_payment_percent: 20
-    interest_rate: 6.33
+    interest_rate: 6.25
     loan_term_years: 30
     monthly_property_tax: 325
-    monthly_pmi: 65
+    monthly_pmi: 0
     monthly_home_insurance: 60
     monthly_hoa: 532
     desired_monthly_payment: 6200
 
-  - name: "Scenario 3 - $5500/month Payment"
+  - name: "Scenario 1 - minimum payment"
     house_price: 670000
-    down_payment_percent: 10
-    interest_rate: 6.33
+    down_payment_percent: 20
+    interest_rate: 6.25
     loan_term_years: 30
     monthly_property_tax: 325
-    monthly_pmi: 65
+    monthly_pmi: 0
     monthly_home_insurance: 60
     monthly_hoa: 532
-    desired_monthly_payment: 6100
+    # desired_monthly_payment: 6100
+    # No desired_monthly_payment = use minimum
 
-  - name: "Scenario 4 - $6000/month Payment"
+  - name: "Scenario 2 - $5500/month Payment"
     house_price: 670000
-    down_payment_percent: 10
-    interest_rate: 6.33
+    down_payment_percent: 20
+    interest_rate: 6.25
     loan_term_years: 30
     monthly_property_tax: 325
-    monthly_pmi: 65
+    monthly_pmi: 0
     monthly_home_insurance: 60
     monthly_hoa: 532
-    desired_monthly_payment: 6200
+    desired_monthly_payment: 5500

@@ -27,6 +27,11 @@ def calculate_mortgage(house_price, down_payment_percent, interest_rate, loan_te
     down_payment = house_price * (down_payment_percent / 100)
     loan_amount = house_price - down_payment
     
+    # PMI is not required if down payment is 20% or more
+    # Override monthly_pmi to 0 if down payment >= 20%
+    if down_payment_percent >= 20:
+        monthly_pmi = 0
+    
     # Monthly interest rate and total number of payments
     monthly_interest_rate = (interest_rate / 100) / 12
     total_payments = loan_term_years * 12
@@ -127,6 +132,7 @@ def calculate_mortgage(house_price, down_payment_percent, interest_rate, loan_te
         'months_saved': months_saved,
         'total_cost_of_ownership': round(total_cost, 2),
         'down_payment': round(down_payment, 2),
+        'down_payment_percent': down_payment_percent,
         'is_paying_extra': desired_monthly_payment is not None and desired_monthly_payment > min_total_payment,
         'pmi_amount': round(monthly_pmi, 2)
     }
@@ -177,7 +183,11 @@ def display_results(results):
     else:
         print("\nUsing Minimum Payment (no extra principal)")
     
-    if results['pmi_removal_month']:
+    # Check if down payment is 20% or more
+    if results['down_payment_percent'] >= 20:
+        print(f"\n*** No PMI Required ***")
+        print("(Down payment is 20% or more)")
+    elif results['pmi_removal_month']:
         years = results['pmi_removal_month'] // 12
         months = results['pmi_removal_month'] % 12
         print(f"\n*** PMI Removal Impact ***")
